@@ -1,0 +1,4 @@
+<div class="result_reject">
+	<img src="<?php echo Yii::app()->params['statics_cdn'].Yii::app()->params['paths']['icons'];?>.'waiting_rival.png" class="ui_icon"/>
+	<p>El combate ha sido rechazado</p>
+</div>

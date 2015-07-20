@@ -1,0 +1,2 @@
+<p>Has estado sin actividad durante un buen rato. Si no estás ahí delante vamos a proceder a desconectarte para que el resto de los jugadores no estén tan tensos con tu presencia.</p>
+<p>Si estás ahí sólo tienes que decirlo y no dar tregua a tus rivales.</p>

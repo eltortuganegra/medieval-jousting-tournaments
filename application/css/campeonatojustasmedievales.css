@@ -1,0 +1,1593 @@
+/*
+campeonato de justas medievales	
+*/
+a{
+	color: royalblue;
+	text-decoration: none;
+}
+h2{
+	border-bottom: 1px solid #CCC;
+}
+h3{
+	color: #999999;
+    font-size: 9px;
+    font-weight: bold;
+    margin-top: 12px;
+    border-bottom: 1px solid #CCC;
+}
+ul{
+	list-style-type: none;
+	padding:0em;
+	margin:0em;
+}
+table.jqplot-table-legend{
+	width: auto !important;
+}
+p .right{
+	margin:0em;
+}
+/*
+*********************** USER INTERFACE
+*/
+.ui-dialog .ui-dialog-content{
+	overflow:visible;
+}
+.ui-widget-content{
+	background: white;	
+}
+.ui_icon{
+	position:relative;
+	width: 4em;
+	height:4em;
+	border: 1px solid #555;
+	margin-right: 0.5em;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+	color:black;
+	background-color:white;
+}
+.ui_icon img{
+	position:absolute;
+	width: 4em;
+	height:4em;
+	z-index:1;	
+}
+.ui_icon_title{
+	display:block;
+	width:100%;
+	position:absolute;	
+	text-align: center;
+	font-size:medium;
+	z-index:10;	
+}
+.ui_icon_value{
+	display:block;
+	width:100%;
+	position:absolute;	
+	text-align: center;
+	font-size:x-large;
+	font-weight: bolder;
+	z-index:10;
+	top:0.8em;
+}
+.ui_clickable{
+	cursor:pointer;
+}
+.ui_rightAlign{
+	text-align: right;
+}
+.avatar{
+	width: 4em;
+	height: 4em;	
+}
+.knight_login_status{
+	width:9px;
+	height:9px;
+	margin-right:0.5em;	
+}
+
+/*Dialog*/
+button.ui-button[name="button_red"]{
+	background: none;
+	background-color: tomato;	
+	color: white;
+	border: 1px solid black;	
+}
+button.ui-button[name="button_green"]{
+	background: none;
+	background-color: palegreen;
+	color: black;
+	border: 1px solid black;
+}
+button.ui-button[name="button_blue"]{
+	background: none;
+	background-color: royalblue;
+	color: white;
+	border: 1px solid black;
+}
+
+/**
+************************* Colores
+*/
+.backgroundColorRed{
+	background-color: tomato;
+}
+.backgroundColorYellow{
+	background-color: palegoldenrod;
+}
+.backgroundColorGreen{
+	background-color: GreenYellow;
+}
+.colorWhite{
+	color: white;
+}
+.colorYellow{
+	color:  palegoldenrod;	
+}
+.colorBlue{
+	color:royalblue;
+}
+.colorRed{
+	color:tomato;
+}
+.backgroundColorYellow{
+	background-color:  palegoldenrod;	
+}
+.backgroundColorBlue{
+	background-color:royalblue;
+}
+.backgroundColorRed{
+	background-color:tomato;
+}
+
+/****
+************************** Botones
+*****/
+a.button_yellow{	
+	background-color: yellow;
+	color: black;	
+	border: 1px solid #333;
+	font-weight: bolder;
+	padding: 0.25em 1em;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;	
+}
+a.button_blue{
+	background-color: royalBlue;
+	color: white;	
+	border: 1px solid #333;
+	padding: 0.25em 1em;
+	font-weight: bolder;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+}
+a.button_red{	
+	background-color: tomato;
+	color: black;	
+	border: 1px solid #333;
+	font-weight: bolder;
+	padding: 0.25em 1em;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;	
+}
+a.button_green{	
+	background-color: palegreen;
+	color: black;	
+	border: 1px solid #333;
+	font-weight: bolder;
+	padding: 0.25em 1em;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;	
+}
+
+input.button_yellow{
+	background-color: khaki;
+	width: 5em;
+	border: 1px solid #333;	
+	cursor: pointer;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+}
+/*
+*******************************cajas
+*/
+div.boxSmall{	
+	padding-bottom: 0.5em;	
+	width: 13em;	
+	border: 1px solid #999;	7
+	border-radius: 0.5em;
+	overflow: hidden;
+}
+div.boxLarge{	
+	padding-bottom: 0.5em;	
+	width: 45em;	
+	border: 1px solid #999;	
+	border-radius: 0.5em;
+	overflow: hidden;
+}
+div.box49Percent{
+	padding-bottom: 0.5em;
+	width: 49%;
+	border: 1px solid #999;	
+	border-radius: 0.5em;
+	overflow: hidden;
+}
+/*
+*******************************Tablas
+*/
+table.headWhiteBodyBlue{	
+	border: 1px solid #666;
+	border-collapse:collapse;
+	background-color: royalblue;
+	color: white;
+	}
+table.headWhiteBodyBlue thead{	
+	background-color: white;
+	color: #666;;
+	text-align:center;
+	font-weight: bolder;	
+	}
+table.headWhiteBodyBlue td{	
+	border: 1px solid #666; 	
+	}
+table.HeadWhiteBodyBlue30Percent{
+	width: 30%;
+	border: 1px solid #555;
+}
+table.HeadWhiteBodyBlue30Percent thead td{
+	text-align:center;
+	font-weight: bolder;
+	border-bottom: 1px solid #555;		
+	}
+table.HeadWhiteBodyBlue30Percent tbody{
+	color: white;
+	background-color: royalblue;
+}
+/*
+************************************Fuentes
+*/
+.fontSmall{
+	font-size:xx-small;	
+}
+.fontXSmall{
+	font-size: x-small;
+}
+.textAlignRight{
+	text-align:right;;
+	}
+.textAlignCenter{
+	text-align:center;
+	}
+.flotarDerecha{
+	float:right;
+}
+.voice-over{
+	font-size:x-small;
+	font-style:italic;
+}
+/*
+****************************** Cabeceras
+*/
+.title_blueCenter{
+	background-color: royalblue;
+	color: white;
+	text-align: center;
+}
+.title_orangeCenter{
+	background-color: orange;
+	color: white;
+	text-align: center;
+}
+
+/**
+**************************ESQUEMA LAYOUT
+*/
+#page{
+	margin-top:0em;
+	
+}
+#header{
+	border-top: 0em;
+	
+}
+#content{
+	padding:0.5em;
+	clear: both;
+}
+/**
+************************** Index
+*/
+#principal{
+	width: 67em;
+	margin:auto;
+}
+#principal .boxLarge, #principal .boxSmall{
+	float:left;	
+	margin:0em 0.5em 0.5em 0em;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+#principal .boxLarge p, #principal .boxSmall p{		
+	margin: 0em 1em;
+}
+#principal .boxSmall p.registerButton{
+	margin:1em;
+}
+#principal .boxSmall{
+	width:16em;
+	height: 22em;
+}
+#principal .boxLarge{
+	width:49.25em;
+	height:22em;
+}
+/**
+************************** HEADER
+*/
+#header{
+	height: 2.2em;
+	background-color: royalblue;
+	color: white;
+	padding: 0.5em 0em;
+}
+#header_guest{
+	height: 3.5em;
+	background-color: royalblue;
+	color: white;
+	padding: 0.5em 0em;
+}
+/*
+* cabecera sigin
+*/
+#header_login{
+	float:right;
+	font-size:small;
+	padding-right: 1em;
+	margin-top:-0.5em;
+	height: 4.5em;
+}
+#header_login td{
+	padding:0em;
+}
+#header_login input[type="text"],#header_login input[type="password"]{
+	width: 10em;
+	margin-right:1em;
+}
+#header_login a{
+	color: lightgrey;
+}
+#header .fontSmall{
+	font-size: x-small;
+}
+/*
+*cabecera logged
+*/
+#logo{
+	padding: 0em 0.5em;
+}
+#logo a{
+	color:white;
+}
+#header_options{
+	float:right;
+	width:17em
+}
+#header_options p{
+	margin:0em;
+}
+#logo_mini{
+	width:19%;
+	float:left; 
+}
+#logo_mini p{
+	text-align:center; 
+	margin:0em;
+}
+#logo_mini a{
+	color:white; 
+}
+#header_knight_profile{
+	height: 4em;
+		
+}
+#header_knight_profile .ui_icon{
+	float:left;	
+	width: 3.75em;
+	height: 3.75em;
+}
+#header_knight_profile .ui_icon img{	
+	width: 3.75em;
+	height: 3.75em;
+}
+#header_knight_profile .ui_icon .ui_icon_value{
+	font-size: x-large;
+	top:0.5em;
+	
+}
+#header img{
+	width:2em;
+	height:2em;
+}
+#header img.avatar{
+	width:4em;
+	height:4em;
+}
+/*
+#header_search{
+	float:left;
+	width: 25%;
+}
+*/
+#search_text{
+	margin-left:0.5em;
+	width: 25em;
+	//height: 2.3em;
+}
+
+#header_miscelanea{
+	width: 54%;
+	float:left
+}
+
+.flyer{
+	float:left;
+	width: 2.5em;	
+	position: relative;
+}
+.header_flyer{
+	position: absolute;
+	top: 3.2em;
+	width: 25em;
+	z-index: 15;	
+	display:none;
+	padding:0.5em;
+	border:1px solid black;
+	color: #666;
+	background-color: white;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+}
+.header_flyer_header{
+	border-bottom: 1px solid #666;
+}
+.header_flyer_body .ui_icon{
+	width: 4em;
+	height:4em;
+}
+.header_flyer_footer{
+	text-align: center;
+	margin-top:0.5em;
+}
+.header_flyer p{
+	margin:0em;
+}
+.header_flyer .right{
+	margin:0em;
+}
+
+.header_messages_last{
+	height: 6em;
+	border-bottom: 1px solid #999	
+}
+
+.header_flyer_friendship{	
+	border-bottom: 1px solid #666;
+	position: relative;
+	height: 5em;
+	padding: 0.5em 0em;
+}
+.header_flyer_friendship .ui_icon{
+	float:left;
+	margin-right: 0.5em;
+}
+.header_flyer_friendship .ui_rightAlign{
+	margin-top:1em;
+	margin-right:1em;
+}
+.etiqueta{
+	position: absolute;
+	top:1em;
+	left:0em;
+	background-color:red;
+	text-align:center;
+	width: 2em;
+	color: white;
+}
+.header_search_result{
+	height: 4em;
+	border-bottom: 1px solid #EEE;
+	padding:0.5em;
+}
+.header_search_result:hover{
+	background-color: #DDD;
+}
+.header_search_result a{
+	display:block;
+	width:100%;
+	height: 100%;
+}
+
+#header .header_search_result img{
+	float:left;
+	width:3em;
+	height:3em;
+	border:1px solid black;	
+	background-color: white;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+	margin-right: 1em;
+}
+.header_search_result span{
+	
+}
+/**
+************************** LEFT COLUMN
+*/
+#content_lef_column{
+	width: 179px;
+	float:left;
+	padding-right: 0.5em;
+}
+
+#content_lef_column h3.knightName{
+	font-size: small;	
+}
+#character_header{
+	width: 100%;
+	height: 5em;
+}
+#character_header p{	
+	color: #666666;
+	font-weight: normal;
+	margin: 0em 0.5em 0em 6.75em;
+	font-size: 9px;	
+}
+#character_header p.name{
+	font-size: x-small;	
+	font-weight: bolder;
+	}
+#character_header p .right{	
+	float:right;
+	margin:0em;
+	padding:0em;
+}
+#character_overview_table td{
+	width: 50%;
+	color: #666;
+}
+#character_overview_table .right{
+	text-align: right !important;
+}
+#content_lef_column .ui_icon{
+	height: 3.75em;
+    width: 3.75em;
+}
+#content_lef_column .ui_icon img{
+	height: 3.75em;
+    width: 3.75em;
+}
+#character_overview{
+	clear:both;
+	margin-top:1em;
+	color: #999999;
+    font-size: 9px;
+	
+}
+/**
+************************** CENTRAL COLUMN
+*/
+#content_center_column{
+	width:511px;
+	padding:0.5em;
+	margin-left: 180px;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	min-height:50em;
+}
+#content_center_column h1,#content_center_column_100 h1{
+	font-size: medium;
+	font-weight: bolder;
+	border-bottom: 1px solid #999;
+}
+#content_center_column_100{
+	width:749px;
+	padding:0.5em;
+	margin-left: 180px;
+	border-left: 1px solid #CCC;	
+	min-height:50em;
+}
+
+/**
+**************************RIGHT COLUMN
+*/
+#content_right_column{
+	width: 225px;
+	float:right;
+	padding-left: 0.5em;	
+}
+#content_right_column h3{
+	text-align: right;
+}
+#content_right_column h3 .knightName{
+	color: tomato;
+	font-size: small;
+}
+#content_right_column ul{
+	text-align: right;
+	font-size: xx-small;
+}
+#actions_highlights{
+	margin: 1em 0em;
+}
+#actions_highlights li{
+	display: inline;
+}
+#message_form_hidden{
+	display: none;
+}
+#message_form{	
+}
+#message_form p{
+	margin:0em;
+}
+#message_form textarea{
+	width: 100%;
+	height: 6em;
+}
+#message_text_characters{
+	margin:0em;	
+}
+
+
+
+/******************
+Specific page
+*******************/
+/*site/index*/
+div.boxSmall p, div.boxLarge p{
+	padding: 0em;
+	margin:0em;
+}
+div.box_register input[type="text"],div.box_register input[type="password"]{
+	width: 90%;
+}
+div.box_register .registerButton{	
+	margin:1em 0em;;
+	text-align:center;
+}
+
+
+
+/**
+**************** site/account activation
+*/
+#account_activation h1{
+	text-align: center;
+}
+#account_activation .box49Percent{
+	float:left;
+	height:17em;	
+	margin-bottom: 0.5em;
+	margin-right:0.5em;
+}
+#account_activation .right{
+	clear: both;
+}
+#account_activation img{
+	float:left;
+	width: 10em;
+	height: 10em;
+	margin: 0em 0.5em 0.5em 0.5em;
+}
+#account_activation p{
+	margin-left:0.5em;
+}
+/*
+********** knight_status
+*/
+#knight_status{
+	margin-bottom:1em;
+}
+#knight_status .ui_icon{
+	float:left;	
+	width: 4em;
+	height: 4em;	
+}
+#knight_status .ui_icon img{		
+	width: 4em;
+	height: 4em;	
+}
+#knight_status .ui_icon .ui_icon_value{		
+	top:0.6em;	
+}
+#experience_bar{
+	margin-top: 7em;
+}
+#experience_bar p{
+	margin:0em;
+}
+#experience_bar_total{
+	width:100%;
+	height: 1em;
+	border: 1px solid #555;
+	background-color: lightslategray; 
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+	margin-bottom: 0.5em;
+}
+#experience_bar_percent{
+	width: 1%;
+	height: 1em;
+	background-color: palegoldenrod;
+	border-right: 1px solid #555;
+}
+
+
+/*
+character/attributesAndSkills
+*/
+#knight_card .HeadWhiteBodyBlue30Percent{
+	float: left;	
+	margin-right: 0.5em;
+}
+
+#knight_card{
+	margin-top:1em;
+}
+.ui_levelup{	
+	width: 12px;
+	height: 12px;	
+	border: 1px solid #555;	
+	cursor: pointer;	
+}
+.ui_levelup_enabled{	
+	background-color: white;
+	border: 1px solid gold;
+}
+.ui_levelup_disabled{
+	background-color: grey;
+	border: 1px solid #555;
+	opacity: 0.5;
+	cursor: default;
+}
+
+/*
+************************* character / inventory
+*/
+#inventory_trader{
+	float:right;
+	width: 40%;		
+}
+#inventory_trader h3{
+	text-align: right;	
+}
+#inventory_trader p{
+	background-color: #999;
+	color: white;
+	text-align: center;
+	font-family:"Times New Roman", Times, serif;
+	font-size: x-small;
+	margin: 0.5em;
+}
+#inventory_primary{
+	width: 19em;
+}
+#inventory_primary_list{
+	background-color: royalBlue;
+	width: 19em;
+	height: 19em;
+	position: relative;
+}
+#knight_image{
+	position: absolute;
+	top:5em;
+	left:5em;
+	width: 8.5em;
+	height: 8.5em;
+	border: 1px solid #666;
+	background-color:white;
+	z-index:0;
+	
+}
+.ui_inventory_position{
+	width: 4em;
+	height: 4em;
+	background-color: white;
+	border: 1px solid #666;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+}
+.ui_inventory_position_enable{	
+	background-color: PaleGoldenRod;
+	border: 1px solid yellow;	
+}
+#inventory_primary_list .ui_inventory_position{
+	position:absolute;
+}
+#ui_inventory_position_1{	
+	top:0.5em;
+	left:0.5em;	
+}
+#ui_inventory_position_2{
+	top:0.5em;
+	left:7.25em;	
+}
+#ui_inventory_position_3{
+	top:0.5em;
+	left:14em;
+}
+#ui_inventory_position_4{	
+	top:5em;
+	left:0.5em;	
+}
+#ui_inventory_position_5{
+	top:5em;
+	left:14em;
+}
+#ui_inventory_position_6{
+	top:9.5em;
+	left:0.5em;	
+}
+#ui_inventory_position_7{
+	top:9.5em;
+	left:14em;		
+}
+#ui_inventory_position_8{
+	top:14em;
+	left: 0.5em;	
+}
+#ui_inventory_position_9{
+	top:14em;
+	left:7.25em;	
+}
+#ui_inventory_position_10{
+	top: 14em;
+	left:14em;
+}
+#inventory_secondary{
+	width: 38em;
+}
+#inventory_secondary_list{	
+	height: 19.5em;
+	border: 1px solid #666;
+	background-color: Tan;
+}
+#inventory_secondary_list .ui_inventory_position{
+	float:left;
+	margin: 0.5em 0 0 0.5em;	
+}
+
+/*
+******************* ITEM
+*/
+.item{
+	position:relative;
+}
+.item .item_img{
+	width:4em;
+	height:4em;
+}
+.item_info{
+	display: none;
+	position: absolute;
+	top:0em;
+	left: 4.5em;
+	width: 15em;	
+	border: 1px solid black;
+	color: white;
+	z-index:15;
+}
+.item_info h4{	
+	border-bottom: 1px solid #ccc;
+	font-size: 9px;
+    font-weight: bold;
+    color: #999999;
+	}
+.item_info_background{
+	position:absolute;
+	top:0em;
+	left:0em;
+	width:100%;
+	height:100%;
+	background-color: black;
+	opacity:0.8;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+	z-index: -10;
+}
+.item_info table{
+	font-size: x-small;
+}
+/**
+********************** /character/evolution
+***/
+#evolution_table{
+	margin-top:1em;
+}
+#evolution_chart{
+	position:relative;
+	width:100%;
+	height:300px;	
+	
+}
+/**
+****************** /character/friends
+*/
+.knights_miniview{
+	float:left;
+	width:13.25em;	
+	border: 1px solid #999;
+	padding:0.5em;
+	margin:0.5em 1em;
+}
+.knights_miniview .ui_icon{
+	margin-bottom: 0.5em;
+}
+.knights_miniview h4{
+	font-size:x-small;
+	margin:0em;
+	padding:0em;	
+}
+.knights_miniview p.fontXXsmall{
+	font-size:xx-small;
+	margin:0em;
+	padding:0em;	
+}
+.knights_miniview p .right{	
+	margin:0em;
+	padding:0em;	
+}
+.knights_status{
+	clear:both;
+	height:3.75em;
+	margin-top: 0.5em;
+		
+}
+.knights_status .ui_icon{
+	float:left;	
+	width: 3.75em;
+	height: 3.75em;	
+}
+.knights_status .ui_icon img{	
+	width: 3.75em;
+	height: 3.75em;
+}
+.knights_status .ui_icon .ui_icon_value{
+	font-size: x-large;
+	top:0.5em;
+	
+}
+/**
+****************** character / messages
+*/
+a .message{
+	color: #999;
+	height: 7em;	
+}
+a:hover .messages{
+	background-color: Khaki ;
+}
+.message{
+	border-bottom: 1px solid #CCC;
+	height: 7em;
+	position: relative;
+	overflow: hidden;
+}
+.message h2{
+	font-size: small;
+	border: 0em;
+	color: royalblue;
+}
+.message .right{
+	font-size: x-small;
+}
+.message .message_content{
+	margin:0em 0em 0em 5em;
+	font-size: x-small;
+	text-indent: 3em;
+	color: #666;
+}
+.message .message_content .indent{	
+	font-style: italic;
+	color: #333;
+}
+.message .message_link{
+	position:absolute;
+	bottom: 0.5em;
+	right: 0em;
+	margin:0em;
+	color: royalblue;
+	text-decoration: underline;
+	font-size: x-small;
+}
+/**
+********************* character / messagesWith
+*/
+.messages_paginator{
+	text-align: center;
+}
+/**
+********************* character /events
+*/
+/*
+.event{	
+	border-bottom: 1px solid #CCC;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+	margin-bottom: 0.5em;
+	border: 1px solid #666;
+}
+.event h4{
+	font-size: small;
+	font-weight: bolder;	
+	color: #666;;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+	
+}
+.event h4 .event_date{
+	float: right;
+	font-size: xx-small;
+	font-weight: normal;
+	color: #CCC;	
+}
+.event_type_knights_evolution .ui_icon{
+	float:left;	
+	margin-left: 0.5em;
+}
+*/
+.event{
+	width:100%;
+	height: 7.5em;
+	border-bottom: 1px solid #CCC;
+}
+.event h4{
+	font-size: small;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #999999;
+    margin:0.5em 0em;
+}
+.event h4 .right{
+	font-size: x-small;
+}
+.event_type_combat p{
+ margin:0em; 
+}
+.event.event_type_knights_evolution{
+	height: 4em;
+}
+.event_type_combat_knights{
+	border-right: 1px solid #CCC;
+	margin-right: 0.5em;
+	width: 50%;
+	height: 5.5em;
+	float:left;
+}
+.event_type_combat_knights .knight_login_status{
+	height: 7px;
+    width: 7px;
+    margin-right:0.25em;
+}
+
+.event_type_combat_knights_from_knight{
+	float:left;
+	width: 37%;
+}
+.event_type_combat_knights_from_knight p{
+	text-align:right;
+	color: royalblue;
+	margin-right: 0.5em;
+	font-size:x-small;
+}
+.event_type_combat_knights_from_knight .avatar{
+	float:right;
+}
+.event_type_combat_knights_knights_vs{
+	float:left;
+	width: 4.6em;
+}
+.event_type_combat_knights_knights_vs p{
+	text-align: center;
+	font-size: x-small;
+	font-weight: bolder;
+}
+.event_type_combat_knights_to_knight{
+	width: 37%;
+	float:left;
+}
+.event_type_combat_knights_to_knight a{
+	color: tomato;
+	font-size:x-small;
+	font-weight: bolder;
+}
+.event_type_combat_status{
+	margin-top: 0.5em;
+}
+.event_type_combat_status .ui_icon{
+	float:left;
+}
+.event_type_combat_status .title{
+	font-size:x-small;
+}
+.event_type_combat_status .text{
+	margin-top: 1.5em;
+	font-size:small;	
+}
+.event_type_combat_status .combat_status_enable .combat_status_enable_pre_pro {
+	width: 2.5em;
+	height:5.5em;
+	float:left;
+	margin-right:0.5em;
+	border-right:1px solid #CCC;
+}
+.event_type_combat_status .combat_status_enable .combat_status_enable_pre_pro img{
+	margin-top:0.5em;
+	width:2em;
+	height:2em;
+	float:left;
+	}
+.rounds{	
+    float: left;
+    height: 5.5em;
+    width: 15em;
+}
+.rounds .round{
+	float:left;
+	margin-right: 0.5em;
+}
+ .rounds .round img{
+ 	width:2em;
+ 	height:2em;
+ }
+ .round_number{
+ 	position: relative;
+ 	bottom:0.5em;
+ 	text-align:center;
+ 	
+ }
+
+/******* PRECOMBAT ************/
+#combatPoster{
+	float:left;
+	width: 50%;
+	height: 12em;
+	background-color: white;
+	border-bottom: 1px solid #CCC;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+	font-size: x-small;
+	margin-right: 1em;
+	border:1px solid #666;
+}
+#combatPoster thead{
+	background-color: #333;
+	color: white;
+	text-align: center !important;	
+}
+#combatPoster thead td{
+	background-color: #333;
+	color: white;
+	text-align: center !important;	
+}
+#combatPoster .leftCorner{
+	background-color: royalblue;
+	color: white;
+	text-align:right;
+	width: 30%;
+}
+#combatPoster .rightCorner{
+	background-color: tomato;
+	color: white;
+	text-align: left;
+	width: 30%;
+}
+#financial{
+	width: 45%;
+	height: 13.4em;
+	border: 1px solid #666;
+	background-color: white;
+	font-size: small;
+	float:left;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+}
+#financial h4{
+	color: white;
+	background-color: #333;
+	margin-bottom: 0.5em;
+	font-size: x-small;
+	padding:0.5em;
+	text-align: center;
+}
+#financial .ui_icon{
+	float:left;	
+	margin-left: 0.5em;
+}
+#financial p{		
+	margin: 0em;
+	font-size: x-small;
+}
+#financial p span{		
+	float:right;
+	margin-right: 0.5em;
+}
+#financial .note{
+	text-align: left;
+	margin: 0.5em; 0em;
+	font-size: x-small;	
+}
+/**
+***************************** rounds
+**/
+#round_pending_round #layer2 #inventory_primary, #round_pending_round #layer2 #inventory_secondary{
+	float:left;	
+	margin-right:1em;
+}
+#round_pending_round #layer2 #inventory_primary #inventory_primary_list{
+	height: 19.65em;
+}
+#round_pending_round{
+	position:relative;
+	width: 59em;
+	height: 23em;
+}
+#round_pending_round #layer1, #round_pending_round #layer2{
+	position: absolute;
+	top:0em;
+	left:0em;
+	width: 59em;
+	height: 23em;	
+}
+#round_pending_round #layer1{	
+	background:white;
+	display:none;
+}
+table.select_point{
+	width: 18em;
+	border: 1px solid red;
+	border-collapse:collapse;
+	margin-bottom: 0em;
+	position:relative;
+}
+table.select_point thead td{
+	text-align:center;
+	color: white;
+}
+table.select_point td{
+	width: 2em;
+	height: 3em;
+	border: 1px solid black;
+	padding:0em;
+}
+#ui_icon_attack_point, #ui_icon_attack_point img{
+	width:2em;
+	height:2em;
+	cursor:pointer;
+}
+.select_point_zone{
+	width:18em;	
+	float:left;
+	margin-right: 1em;
+	position:relative;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+}
+.ui_defense_point_position_inner_wrapper{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+#attack_zone{
+	background-color: tomato;	
+}
+#defense_zone{
+	background-color: royalblue;		
+}
+.select_point_zone .knight_image{
+	position:absolute;
+	bottom:0em;
+	left:0em;
+	width: 18em;
+	height: 18em;
+}
+.ui_attack_point_position_enable{	
+	background-color: PaleGoldenRod;
+	opacity: 0.3;	 
+}
+#ui_icon_defense_point{
+	position:absolute;
+	top:0em;
+	left:0em;
+	cursor:pointer;
+}
+#ui_icon_defense_point.ui_icon_shield_size_48{		
+	width:4em;
+	height: 6em;	
+}
+#ui_icon_defense_point.ui_icon_shield_size_48 img{
+	width:4em;
+	height:4em;
+	margin-top:1em;
+}
+.ui_defense_point_position_inner_wrapper_enable{
+	background-color: PaleGoldenRod;
+	opacity: 0.3;	 
+	}
+}
+/**
+************************************* Dialog show round result
+*/
+#round_result{
+	border:1px solid #666;
+}
+#round_result .ui_icon{float:left;width: 3.75em;height:3.75em}
+#round_result div.blue_knight,#round_result div.red_knight{
+	width: 18em;
+	color:white;
+	border:1px solid #666;
+	float:left;
+}
+#round_result div.blue_knight{
+	background-color: royalblue;
+}
+#round_result div.red_knight{
+	background-color: tomato;
+	margin-left:0.5em;
+}
+#round_result h2{
+	background-color: white;
+	color:black;
+	border-bottom: 1px solid #666;
+	text-align:center;
+	font-size: medium;
+	margin:0em;
+}
+#round_result h4{
+	font-size: x-small;
+	margin:0em;
+	color:white;
+	font-weight:bolder;
+}
+#round_result .description p{
+	font-size: x-small;
+	margin:0em;
+}
+#round_result_header{
+	width:100%;	
+}
+#round_result_header .status_knight{	
+	padding: 0.5em;
+}
+.header_knight_profile{
+	width: 18em;
+	height: 5em;		
+}
+#round_result_header .ui_icon, #round_result_header .ui_icon img,#round_body_impacts .ui_icon img, #round_result_header .ui_icon .avatar{
+	width: 3.75em;
+	height: 3.75em;
+}
+#round_result_header .header_knight_profile{
+	width: 18em;
+	height: 3.5em;
+	padding: 0em 0em 0.5em 0.5em;
+}
+#round_result_header .ui_icon_value{
+	top:0.6em;
+}
+#round_result_body, #round_body_throws, #round_body_impacts{
+	clear:both;
+	margin-top:0.5em;
+}
+#round_result_body{	
+	
+}
+#round_result_body .description{
+	padding:0.5em;
+	height: 3.75em;
+}
+/**
+*************************************** POSTCOMBAT
+**/
+#post_combat{
+	
+}
+#post_combat #post_combat_result{
+	width: 18em;
+	margin:auto;
+	float:none;	
+	margin-bottom: 1em;
+	border: 1px solid #666666;
+    box-shadow: 5px 5px 5px #333333;    
+}
+#post_combat #post_combat_result.draw{
+	background-color: orange;
+}
+#post_combat #post_combat_result .body{
+	padding:0.5em;
+}
+#post_combat #post_combat_result .body p{
+	margin-left: 5em;
+}
+#post_combat h2{
+	text-align: center;
+	font-size: small;
+	background-color: white;
+	color: black;
+}
+#post_combat p{	
+	font-size: small;
+	margin: 0em 0em 0.5em 0em;
+}
+#post_combat .ui_icon{	
+	float:left;	
+}
+#post_combat .blueKnight, #post_combat .redKnight{
+	float:left;
+	width:18em;
+	color:white;
+	border: 1px solid #666;
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+}
+#post_combat .blueKnight{
+	background-color: royalblue;
+	margin-right: 0.5em;
+	
+}
+#post_combat .redKnight{
+	background-color: tomato;
+}
+#post_combat .blueKnight_body, #post_combat .redKnight_body{
+	padding:0.5em;
+}
+#post_combat .description{
+	height: 4em;
+	margin-bottom:0.75em;
+}
+/**
+************************************************** Marketplace 
+*/
+#filter,#filter input, #filter select{
+	font-size:x-small;
+}
+#filter table{
+	width:60%;
+}
+#filter select, #filter input{
+	width:10em;
+}
+#filter .shortInput{
+	width:5em;
+}
+#filter input[name=spear_name],#filter input[name=armour_name] {
+	width: 17em;
+}
+#filter{
+	position:relative;
+	height:10em;
+	border:1px solid #ccc;
+	padding:0.5em;
+	height:18em;
+}
+#filter_spears, #filter_armours, #filter_tricks{
+	position:absolute;
+	top:3em;
+	display:none;	
+}
+#filter_armours{
+	display:block;
+}
+#filter_legend{
+	float:right;
+	width: 30em;
+	border-left: 1px solid #ccc;
+	padding-left:0.5em;
+}
+#filter_legend p{
+	margin-bottom:0.5em;
+}
+#medievalmarket #list table, #purchasesHistory table{
+	border-collapse: collapse;
+	border: 1px solid #EEE;
+	font-size:x-small;
+}
+#medievalmarket #list table thead, #purchasesHistory thead{
+	background-color: orange;
+	text-align:center;
+}
+#medievalmarket #list table tbody tr:nth-child(even), #purchasesHistory tbody tr:nth-child(even){
+	background-color: #EEE;
+}
+#medievalmarket #list table td, #purchasesHistory td{
+	border-right: 1px solid #CCC;
+	text-align:center;	
+}
+#buy_item .ui_icon{
+	float:left;
+}
+#buy_item p{
+	font-size:small;
+	margin:0em;	
+	margin-bottom:0.5em;
+}
+#buy_item p.leyend{
+	font-size:x-small;
+	font-style:italic;
+}
+.paginator{
+	text-align: right;
+	font-size:x-small;
+}
+.paginator .paginator_enable{
+	font-size:small;
+}
+/**
+************************** JOBS
+*/
+#jobs table{
+	border-collapse: collapse;
+	border: 1px solid #EEE;
+	font-size:x-small;
+	float:left;
+	width:20em;
+	margin-right:0.5em;
+}
+#jobs table thead{
+	background-color: orange;
+	text-align:center;
+}
+#jobs tbody tr:nth-child(even){
+	background-color: #EEE;
+}
+#jobs td{
+	border-right: 1px solid #CCC;
+	text-align:center;	
+}
+/**
+************************ YELLOW PAGES
+*/
+.yellow_pages_menu{
+	margin:0.5em 0em 1em 0em;;
+}
+.yellow_pages_menu li{
+	border: 1px solid #CCC;
+	display: inline;
+	padding: 0.25em 0.5em;
+	margin-right: 0.2em;	
+}
+.yellow_pages_menu li:hover, .yellow_pages_menu li.selected{
+	background-color: #DDD;
+}
+#yellow_pages #description{
+	margin: 0.5em 0em;
+}
+#yellow_pages #last_suscribe_knights{
+	
+}
+/**
+* desqualify
+*/
+#desqualify p{
+	border: 1px solid #333;
+	background: none repeat scroll 0 0 tomato;
+	color:white;
+	border-radius:4px;
+	padding:0.5em;
+}
+#desqualify p span{
+	float:right;
+}
