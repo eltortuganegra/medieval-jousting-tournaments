@@ -1,1 +1,4 @@
+application/protected/config/development.php
+application/protected/runtime/
+application/assets/
 /.idea/
