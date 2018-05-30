@@ -109,10 +109,10 @@ return array(
 		),
 		'email'=>array(
 				'class'=>'KEmail',
-				'host_name'=>'', //Hostname or IP of smtp server
-				'user'=>'',
-				'password'=>'',
-				'host_port'=>465,				
+				'host_name'=>'<smtp_host>', //Hostname or IP of smtp server
+				'user'=>'<smtp_user>',
+				'password'=>'<smtp_password>',
+				'host_port'=><smtp_port>,
 				'ssl'=>'true',				
 		),
 	),
