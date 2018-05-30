@@ -75,7 +75,7 @@ Si tienes alguna sugerencia, pregunta o curiosidad por algo rellena el siguiente
 	<?php endif; ?>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit'); ?>
+		<?php echo CHtml::submitButton('Enviar paloma mensajera con el mensaje'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
