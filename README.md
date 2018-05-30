@@ -1,7 +1,8 @@
-Ouuuuuuh yeah!!
+# Medieval Jousting Tournaments
 
-This is an amazing old project for get some of fun and learn tricks about programming with legacy code.
+This is an old amazing project developed long time ago (2013). I have decidided to publish this legacy
+code for make a refactor in a future. Feel free send me your commits!
 
-You can see the job in medievaljoustingtournaments.com.
+You can play in [medievaljoustingtournaments](medievaljoustingtournaments.eltortuganegra.com).
 
-Thanks you!
+Enjoy!
