@@ -378,8 +378,10 @@ class SiteController extends Controller
 		
 		
 		//Check email
-		$validator = new CEmailValidator();
-		if( $validator->validateValue($_GET['email']) ){
+//		$validator = new CEmailValidator();
+//		if( $validator->validateValue($_GET['email']) ){
+
+		if (filter_var($_GET['email'], FILTER_VALIDATE_EMAIL)) {
 			
 			//Check if user exist
 			$user = Users::model()->find(
