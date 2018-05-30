@@ -106,6 +106,7 @@ class UserIdentity extends CUserIdentity
 			//$this->_knights_id = $knight->id;			
 			$this->setState( 'knights_id', $knight->id );
 			$this->setState( 'knights_name', $knight->name );
+            $this->setState( 'email', $this->username );
 			$this->errorCode=self::ERROR_NONE;
 			
 		}

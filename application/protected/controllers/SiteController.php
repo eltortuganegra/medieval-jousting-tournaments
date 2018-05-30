@@ -585,7 +585,6 @@ class SiteController extends Controller
 							'username'=>$user->email,
 							'password'=>'nolosabemos'
 						);
-											
 						
 						
 						//Check if all is ok		
