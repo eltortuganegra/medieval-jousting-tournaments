@@ -582,14 +582,13 @@ class SiteController extends Controller
 						//Hacemos el login de alta
 						$model=new LoginForm;
 						$model->attributes=array(
-							'email'=>$user->email,
-							'username'=>$knight->name,
+							'username'=>$user->email,
 							'password'=>'nolosabemos'
 						);
 						
 						
 						//Check if all is ok		
-						if( $model->loginFromValidation() ){
+						if( $model->loginFromValidation() && $model->loginFromValidation() ){
 							$template = 'accountActivation';
 						}else{									
 							$data['message'] = 'Se ha producido un error al validar la cuenta. Escribenos un correo a '.Yii::app()->params['adminEmail'];
