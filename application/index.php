@@ -27,6 +27,6 @@ $config = $environment->getConfigPath();
 //}
 
 // change the following paths if necessary
-$yii = $rootPath . '/../../yii/framework/yii.php';
+$yii = $rootPath . '/../../yii-1.1.13.e9e4a0/framework/yii.php';
 require_once($yii);
 Yii::createWebApplication($config)->run();
