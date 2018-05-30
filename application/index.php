@@ -8,7 +8,6 @@ $environment = new Environment($host, $rootPath);
 $environment->buildConfiguration();
 $configPath = $environment->getConfigPath();
 
-
 $yiiPath = $rootPath . '/../../yii-1.1.11.58da45/framework/yii.php';
 require_once($yiiPath);
 
