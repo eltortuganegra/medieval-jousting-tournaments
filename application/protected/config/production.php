@@ -123,8 +123,8 @@ return array(
 		// this is used in contact page
 		'keypassword'=>'',
 		'adminEmail'=>'',
-		'url_domain'=>'http://medievaljoustingtournaments.com',
-		'statics_cdn'=>'http://medievaljoustingtournaments.com',
+		'url_domain'=>'http://medievaljoustingtournaments.eltortuganegra.com',
+		'statics_cdn'=>'http://medievaljoustingtournaments.eltortuganegra.com',
 		'paths' => array(
 			'icons'=>'/images/icons/',
 			'avatars'=>'/images/avatars/',
