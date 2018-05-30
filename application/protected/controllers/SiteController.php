@@ -582,7 +582,8 @@ class SiteController extends Controller
 						//Hacemos el login de alta
 						$model=new LoginForm;
 						$model->attributes=array(
-							'username'=>$user->email,
+							'email'=>$user->email,
+							'username'=>$knight->name,
 							'password'=>'nolosabemos'
 						);
 						
