@@ -1,10 +1,8 @@
 <?php
+
 $rootPath = dirname(__FILE__);
 
 require($rootPath . '/protected/components/Environment.php');
-
-// change the following paths if necessary
-$yii = $rootPath . '/../../yii/framework/yii.php';
 
 $host = $_SERVER['HTTP_HOST'];
 $environment = new Environment($host, $rootPath);
@@ -28,6 +26,7 @@ $config = $environment->getConfigPath();
 //        defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 //}
 
-
+// change the following paths if necessary
+$yii = $rootPath . '/../../yii/framework/yii.php';
 require_once($yii);
 Yii::createWebApplication($config)->run();

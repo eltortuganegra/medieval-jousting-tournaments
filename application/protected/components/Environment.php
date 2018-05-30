@@ -43,7 +43,7 @@ class Environment
 
     public function getConfigPath()
     {
-        return $this->config;
+        return $this->configPath;
     }
 
     private function setConfigPath($pathToConfigFile)
