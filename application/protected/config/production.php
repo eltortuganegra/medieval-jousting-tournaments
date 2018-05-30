@@ -73,8 +73,8 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=caballeros',
 			'emulatePrepare' => true,
-			'username' => '',
-			'password' => '',
+			'username' => '<database_username>',
+			'password' => '<database_password>',
 			'charset' => 'utf8',
 			'schemaCachingDuration' => 180,				
 		),		
